@@ -2,13 +2,10 @@ package hangman;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.Vector;
+import java.util.*;
 
 public class EvilHangmanGame implements IEvilHangmanGame {
-    Vector<String> words = new Vector<>();
+    Set<String> words = new HashSet<String>();
 
     @Override
     public void startGame(File dictionary, int wordLength) throws IOException, EmptyDictionaryException {
